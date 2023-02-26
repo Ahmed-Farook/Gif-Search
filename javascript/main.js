@@ -19,7 +19,7 @@ document.querySelector(".js-userinput").addEventListener("keyup", function (e) {
 
 var GiphyAJAXCall = new XMLHttpRequest();
 url =
-  "http://api.giphy.com/v1/gifs/search?q=funny&api_key=ZYqunnepYGrb0aHc2MQ7hhDMvfftPq9h";
+  "https://api.giphy.com/v1/gifs/search?q=funny&api_key=ZYqunnepYGrb0aHc2MQ7hhDMvfftPq9h";
 GiphyAJAXCall.open("GET", url);
 GiphyAJAXCall.send();
 
@@ -31,7 +31,7 @@ GiphyAJAXCall.addEventListener("load", function (e) {
 function changeurl(newsrc) {
   if (newsrc === "") {
     url =
-      "http://api.giphy.com/v1/gifs/search?q=funny&api_key=ZYqunnepYGrb0aHc2MQ7hhDMvfftPq9h";
+      "https://api.giphy.com/v1/gifs/search?q=funny&api_key=ZYqunnepYGrb0aHc2MQ7hhDMvfftPq9h";
     GiphyAJAXCall.open("GET", url);
     GiphyAJAXCall.send();
 
@@ -41,7 +41,7 @@ function changeurl(newsrc) {
     });
   } else {
     url =
-      "http://api.giphy.com/v1/gifs/search?q=" +
+      "https://api.giphy.com/v1/gifs/search?q=" +
       newsrc +
       "&api_key=ZYqunnepYGrb0aHc2MQ7hhDMvfftPq9h";
     GiphyAJAXCall.open("GET", url);
